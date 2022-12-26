@@ -1,0 +1,112 @@
+.header {
+  height: 270px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.header .v {
+  z-index: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.header .barDiv {
+  position: absolute;
+  margin: 10px 0 0 10px;
+  z-index: 1;
+  cursor: pointer;
+}
+.header .barDiv img {
+  width: 30px;
+}
+.header .nav {
+  position: absolute;
+  right: 0;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .nav a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+.header .logo {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 90px;
+}
+.header .logo img {
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+  .header .v {
+    height: 270px;
+  }
+  .header .logo {
+    bottom: 140px;
+  }
+  .header .logo img {
+    width: 90px;
+  }
+  .header .nav a {
+    margin: 10px;
+    font-size: 15px;
+  }
+  .header .nav {
+    height: 18%;
+  }
+  .header .barDiv img {
+    width: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .header .nav {
+    display: none;
+  }
+  .header .v {
+    display: none;
+  }
+  .header {
+    background-image: -webkit-gradient(linear, left top, right top, from(#367877), to(#45C0BE));
+    background-image: linear-gradient(to right, #367877, #45C0BE);
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  .header .logo {
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 0px;
+    background-color: aquamarine;
+    width: 80px;
+  }
+  .header .logo img {
+    width: 60px;
+  }
+  .header .barDiv img {
+    width: 40px;
+    margin: 10px 0 0 0;
+  }
+}

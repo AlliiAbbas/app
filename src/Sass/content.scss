@@ -1,0 +1,251 @@
+@use  "./variable.scss"  as *   ;
+@use  "./mixin.scss"  as *   ;
+
+.Content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .top{
+        margin: 60px 0 170px 50px;
+        width: 300px;
+        h2{
+            font-weight: bold;
+            color: $secColor;
+        }
+        p{
+            margin: 10px 0 20px 0;
+        }
+        button{
+            
+            width: 160px;
+            height: 40px;
+            background-image: linear-gradient(to bottom, $secColor , $mainColor);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        img{
+            position: absolute;
+            right: 90px;
+            top: -80px;
+            width:430px;    
+        }
+    }
+    .mid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            width: 600px;
+        }
+        .info{
+            width: 300px;
+            margin-top: 100px;
+        }
+        h2{
+            font-weight: bold;
+            color: $secColor;
+        }
+        p{
+            margin: 10px 0 20px 0;
+        }
+        button{
+            
+            width: 160px;
+            height: 40px;
+            background-image: linear-gradient(to left, $secColor , $mainColor);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    }
+    .down{
+        margin-top: 50px;
+        .provider{
+            width: 100%;
+            text-align: center;
+            h2{
+                color: $secColor;
+                font: 20px;
+            }
+        }
+
+        .blueDiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #EEF8FF;
+            height: 300px;
+            margin:10px 0 250px 0;
+            .left{
+                position: absolute;
+                left: 10px;
+                cursor: pointer;
+            }
+            .right{
+                position: absolute;
+                right: 10px;
+                cursor:pointer ;
+            }
+            .companies{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .company{
+                    
+                    background-color: #B6E1DA;
+                    width: 170px;
+                    height: 200px;
+                    border-radius: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    .companyLogo{
+                       
+                        background-color: white;
+                        width: 110px;
+                        height: 120px;
+                        border-radius: 16px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            width: 80px;
+                            cursor: pointer;
+                        }
+                        
+                    }
+                    p{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@include tablet{
+    .Content .top img{
+        width: 250px;
+        top: 20px;
+    }
+    .Content .mid img {
+    width: 370px;
+    margin-right: 20px;
+    }
+    .Content .down .blueDiv .companies{
+        width: 80%;
+    }
+}
+
+@include mobileL {
+    .Content .mid{
+        flex-direction: column;
+    }
+    .Content .top{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+    }
+    .Content .info{
+        width: 400px;
+    }
+    .Content .top .img{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .Content .mid .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Content .down .blueDiv .left {
+        display: none;
+    }
+    .Content .down .blueDiv .right{
+        display: none;
+    }
+    .Content .down .blueDiv .companies{
+        
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+        
+    }
+    .Content .down .blueDiv {
+        height:700px
+        ;
+        margin-bottom: 120px;
+    }
+    .Content .down .blueDiv .companies .company{
+        margin: 10px;
+    }
+    .Content .top img{
+        position: relative;
+        right: -12px;
+        top: -15px;
+        margin-bottom: 50px;
+    }
+    .Content .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .Content .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@include mobileM{
+    .Content .mid img{
+        width: 320px;
+    }
+    .Content .top img{
+        right: 10px;
+    }
+    .footer .v {
+    top: -67px;
+    }
+}
+
+@include mobileS{
+    .Content .top{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .Content .top img{
+        right: 5px;
+    }
+    .Content .top p{
+        margin-left: 10px;
+    }
+    .Content .mid img{
+        width: 300px;
+    }
+    .footer .v{
+        top: -57px;
+    }
+    .footer .logo{
+        top: -35px;
+    }
+}
