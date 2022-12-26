@@ -286,6 +286,19 @@
   .Content .top img {
     right: 0px;
   }
+  .providerContent .bot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+  .providerContent .bot .info {
+    width: 275px;
+  }
+  .providerContent .bot .info p {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 376px) {
   .Content .mid img {

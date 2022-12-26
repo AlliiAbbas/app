@@ -218,6 +218,22 @@
     .Content .top img{
         right: 0px;
     }
+
+    
+    
+    .providerContent .bot{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .providerContent .bot .info{
+        width: 275px;
+    
+    }
+
+    .providerContent .bot .info p{
+        margin-bottom: 20px;
+    }
+    
 }
 
 @include mobileM{
