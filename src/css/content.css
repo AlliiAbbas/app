@@ -283,6 +283,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .Content .top img {
+    right: 0px;
+  }
 }
 @media (max-width: 376px) {
   .Content .mid img {

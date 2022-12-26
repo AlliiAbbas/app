@@ -215,6 +215,9 @@
         align-items: center;
         flex-direction: column;
     }
+    .Content .top img{
+        right: 0px;
+    }
 }
 
 @include mobileM{
