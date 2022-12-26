@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/app/static/css/main.459bee4d.css",
+    "main.js": "/app/static/js/main.8bea6147.js",
+    "static/js/787.28cb0dcd.chunk.js": "/app/static/js/787.28cb0dcd.chunk.js",
+    "static/media/googleplay.png": "/app/static/media/googleplay.68b0b4ca44cc0b8e6108.png",
+    "static/media/Group 36.png": "/app/static/media/Group 36.6ed8fa0f7ca5265f9d9d.png",
+    "static/media/Path 155.png": "/app/static/media/Path 155.36e0f1a5f6f34f99d3c8.png",
+    "static/media/Path 7.png": "/app/static/media/Path 7.839bf695198d8bd940f2.png",
+    "static/media/Group 22.png": "/app/static/media/Group 22.e50a6da3291e0b855204.png",
+    "static/media/pngwing.com (9).png": "/app/static/media/pngwing.com (9).51029e6ffe1bc31e1545.png",
+    "index.html": "/app/index.html",
+    "main.459bee4d.css.map": "/app/static/css/main.459bee4d.css.map",
+    "main.8bea6147.js.map": "/app/static/js/main.8bea6147.js.map",
+    "787.28cb0dcd.chunk.js.map": "/app/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.459bee4d.css",
+    "static/js/main.8bea6147.js"
+  ]
+}
