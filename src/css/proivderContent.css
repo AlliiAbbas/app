@@ -78,3 +78,14 @@
   color: #45C0BE;
   margin-bottom: 15px;
 }
+
+@media (max-width: 700px) {
+  .providerContent .top .imgDiv {
+    margin-top: 30px;
+    width: 180px;
+    height: 180px;
+  }
+  .providerContent .bot {
+    margin-bottom: 120px;
+  }
+}

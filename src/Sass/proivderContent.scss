@@ -1,5 +1,5 @@
 @use  "./variable.scss"  as *   ;
-
+@use  './mixin.scss' as * ;
 .providerContent{
     
     .top{
@@ -54,4 +54,16 @@
             
         }
     }
+}
+
+@include mobileL {
+    .providerContent .top .imgDiv{
+       margin-top: 30px;
+       width: 180px;
+       height: 180px;
+    }
+    .providerContent .bot{
+        margin-bottom: 120px;
+    }
+
 }
